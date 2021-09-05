@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MATH_TRICKS</string>
+    <string name="chap_details">This is the place where your chapter description will go. It will let your user know about the chapter first.</string>
+    <string name="notes_title">Exit Notes</string>
+    <string name="notes_exit_message">Are you sure want to exit Notes without saving</string>
+    <string name="save_exit"><![CDATA[Save & Exit]]></string>
+    <string name="cancel">Cancel</string>
+    <string name="notes_name">Notes</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    /*test_interstitial_ad_unit_id   -  ca-app-pub-3940256099942544/1033173712
+      test_banner_ad_unit_id         -  ca-app-pub-3940256099942544/6300978111
+      test_app_id                    -  ca-app-pub-3940256099942544~3347511713
+    */
+
+    /*real_interstitial_ad_unit_id   -  ca-app-pub-5192858585119148/9748337908
+      test_banner_ad_unit_id         -  ca-app-pub-5192858585119148/7202065615
+      test_app_id                    -  ca-app-pub-5192858585119148~7341666413
+    */
+</resources>

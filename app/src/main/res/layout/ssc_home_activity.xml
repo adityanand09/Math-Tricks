@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".SscHomeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:minHeight="56dp">
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/menu_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/menu_btn"
+            android:text="@string/app_name"
+            android:textSize="21dp"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/add_note"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="19dp"
+            android:paddingLeft="19dp"
+            android:onClick="toNotes"
+            android:background="@android:color/transparent"
+            android:text="notes"
+            android:textColor="#00695C"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A5A5A5"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <com.tricks.math_tricks.MainFrame
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            ads:layout_constraintVertical_chainStyle="spread"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent">
+
+
+        </com.tricks.math_tricks.MainFrame>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

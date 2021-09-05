@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:width="40dp"
+        android:height="40dp">
+        <shape android:shape="oval">
+            <solid android:color="#ddd"/>
+        </shape>
+    </item>
+    <item android:width="30dp"
+        android:height="30dp">
+        <rotate android:drawable="@drawable/ic_night_mode" android:fromDegrees="60"
+            android:toDegrees="60"
+            android:pivotX="40%"
+            android:pivotY="80%"/>
+    </item>
+
+</layer-list>

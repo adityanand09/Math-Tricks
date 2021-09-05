@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:minHeight="56dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginLeft="19dp"
+            android:onClick="note_back"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_btn"
+            android:text="@string/notes_name"
+            android:textSize="21dp"
+            android:textColor="#000" />
+
+        <ImageButton
+            android:id="@+id/add_note"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="19dp"
+            android:paddingLeft="19dp"
+            android:onClick="add_note"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_add_black_24dp"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A5A5A5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/empty_note_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add_note"
+            android:onClick="add_note"
+            android:padding="120dp"
+            android:text="Add note" />
+
+        <TextView
+            android:id="@+id/empty_note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Note"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:padding="0dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="#A8A8A8"
+            android:onClick="add_note"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:layout_alignBottom="@+id/empty_note_img"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notes_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
